@@ -1,9 +1,9 @@
 variable "key_name" {
-  default = "oregon1"
+  default = "cparis"
 }
 
 variable "pvt_key" {
-  default = "/root/.ssh/hkey.pem"
+  default = "/root/.ssh/vkey.pem"
 }
 
 variable "us-east-zones" {
@@ -11,5 +11,5 @@ variable "us-east-zones" {
 }
 
 variable "sg-id" {
-  default = "sg-05dde7b924d23b37b"
+  default = "sg-0cb44331fc3ea085f"
 }
