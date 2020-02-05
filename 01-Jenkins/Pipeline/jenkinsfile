@@ -61,6 +61,7 @@ node {
 	
 	stage('Test') {
 		echo "Hello world"
+		echo "How are you Sonal"
 	}
  
   stage('Geting Ready For Ansible') {
