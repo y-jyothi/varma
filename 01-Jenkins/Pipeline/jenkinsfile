@@ -60,7 +60,7 @@ node {
 	}
 	
 	stage('Test') {
-		sh echo "Hello world"
+		echo "Hello world"
 	}
  
   stage('Geting Ready For Ansible') {
