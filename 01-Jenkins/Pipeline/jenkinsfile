@@ -51,13 +51,13 @@ node {
         }
 	*/
 	
-	stage('Deploy Approval') {
-		input "Deploy to prod?"
-	}
-	
    stage('Docker-Stage-Deployment') {
    sh label: '', script: 'docker-compose up -d --build'
   }
+  
+  stage('Deploy Approval') {
+		input "Deploy to prod?"
+	}
  
   stage('Geting Ready For Ansible') {
   sh label: 'Docker', script: 'cp -rf target/*.war ../../../04-Terraform/03-Ansible-Deploy/ansible/04-Tomcat/templates/'
@@ -69,8 +69,8 @@ node {
 def project_terra="04-Terraform/03-Ansible-Deploy"
 dir(project_terra) {
    stage('Prod Deployment on AWS'){
-   sh label: 'terraform', script: '/root/bin/terraform  init'
-   sh label: 'terraform', script: '/root/bin/terraform  apply -input=false -auto-approve'
+   sh label: 'terraform', script: '/bin/terraform  init'
+   sh label: 'terraform', script: '/bin/terraform  apply -input=false -auto-approve'
    }
 }
 
