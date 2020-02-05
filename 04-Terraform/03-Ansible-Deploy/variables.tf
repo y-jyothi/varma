@@ -1,9 +1,9 @@
 variable "key_name" {
-  default = "cparis"
+  default = "ramya"
 }
 
 variable "pvt_key" {
-  default = "/root/.ssh/vkey.pem"
+  default = "/root/.ssh/hkey.pem"
 }
 
 variable "us-east-zones" {
@@ -11,5 +11,5 @@ variable "us-east-zones" {
 }
 
 variable "sg-id" {
-  default = "sg-0cb44331fc3ea085f"
+  default = "sg-0c7ab7d3a7c9e70c0"
 }
