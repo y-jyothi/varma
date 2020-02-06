@@ -1,5 +1,5 @@
 variable "key_name" {
-  default = "ramya"
+  default = "pramya"
 }
 
 variable "pvt_key" {
@@ -11,5 +11,5 @@ variable "us-east-zones" {
 }
 
 variable "sg-id" {
-  default = "sg-0c7ab7d3a7c9e70c0"
+  default = "sg-03e7056a3accbd110"
 }
