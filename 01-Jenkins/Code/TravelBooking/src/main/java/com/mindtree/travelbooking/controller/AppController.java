@@ -27,7 +27,7 @@ public class AppController {
 	
 	Booking b=new Booking();
 
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String index() {
 		return "index";
 	}
