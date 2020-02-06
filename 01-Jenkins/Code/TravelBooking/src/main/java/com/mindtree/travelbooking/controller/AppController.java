@@ -27,12 +27,12 @@ public class AppController {
 	
 	Booking b=new Booking();
 
-	@RequestMapping("/home")
+	@GetMapping("/home")
 	public String index() {
 		return "index";
 	}
 
-	@RequestMapping("/adduser")
+	@GetMapping("/adduser")
 	public String addUser() {
 		return "registration";
 	}
