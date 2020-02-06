@@ -4,7 +4,7 @@ node {
 
      
   stage('Git-Checkout') {
-   git 'https://github.com/SaiCharanUppari/mindtree-devops-30Jan2020.git'
+   git 'https://github.com/y-jyothi/varma.git'
   }
     
  def project_path="01-Jenkins/Code/TravelBooking"
